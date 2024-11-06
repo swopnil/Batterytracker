@@ -15,6 +15,10 @@
 		39654D692CD5DCCB00300B3D /* BatterytrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39654D682CD5DCCB00300B3D /* BatterytrackerTests.swift */; };
 		39654D732CD5DCCB00300B3D /* BatterytrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39654D722CD5DCCB00300B3D /* BatterytrackerUITests.swift */; };
 		39654D752CD5DCCB00300B3D /* BatterytrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39654D742CD5DCCB00300B3D /* BatterytrackerUITestsLaunchTests.swift */; };
+		39654D822CD5DFD200300B3D /* LocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39654D812CD5DFD200300B3D /* LocationManagerDelegate.swift */; };
+		39654D842CD5E3BD00300B3D /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39654D832CD5E3BD00300B3D /* TimeManager.swift */; };
+		39654D862CD5E7EE00300B3D /* BackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39654D852CD5E7EE00300B3D /* BackgroundManager.swift */; };
+		39654D882CD5EB3800300B3D /* BrightnessObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39654D872CD5EB3800300B3D /* BrightnessObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		39654D6E2CD5DCCB00300B3D /* BatterytrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatterytrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39654D722CD5DCCB00300B3D /* BatterytrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatterytrackerUITests.swift; sourceTree = "<group>"; };
 		39654D742CD5DCCB00300B3D /* BatterytrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatterytrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		39654D812CD5DFD200300B3D /* LocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerDelegate.swift; sourceTree = "<group>"; };
+		39654D832CD5E3BD00300B3D /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		39654D852CD5E7EE00300B3D /* BackgroundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundManager.swift; sourceTree = "<group>"; };
+		39654D872CD5EB3800300B3D /* BrightnessObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				39654D5E2CD5DCCB00300B3D /* Batterytracker.entitlements */,
 				39654D5F2CD5DCCB00300B3D /* Info.plist */,
 				39654D5B2CD5DCCB00300B3D /* Preview Content */,
+				39654D812CD5DFD200300B3D /* LocationManagerDelegate.swift */,
+				39654D832CD5E3BD00300B3D /* TimeManager.swift */,
+				39654D852CD5E7EE00300B3D /* BackgroundManager.swift */,
+				39654D872CD5EB3800300B3D /* BrightnessObserver.swift */,
 			);
 			path = Batterytracker;
 			sourceTree = "<group>";
@@ -267,6 +279,10 @@
 				39654D562CD5DCC800300B3D /* ContentView.swift in Sources */,
 				39654D582CD5DCC800300B3D /* Item.swift in Sources */,
 				39654D542CD5DCC800300B3D /* BatterytrackerApp.swift in Sources */,
+				39654D862CD5E7EE00300B3D /* BackgroundManager.swift in Sources */,
+				39654D842CD5E3BD00300B3D /* TimeManager.swift in Sources */,
+				39654D882CD5EB3800300B3D /* BrightnessObserver.swift in Sources */,
+				39654D822CD5DFD200300B3D /* LocationManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Batterytracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 38V66H366K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Batterytracker/Info.plist;
@@ -461,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Batterytracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 38V66H366K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Batterytracker/Info.plist;

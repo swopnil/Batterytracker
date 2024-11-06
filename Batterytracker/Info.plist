@@ -2,9 +2,83 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-	</array>
+    <!-- Battery Usage -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+        <string>processing</string>
+    </array>
+
+    <!-- Location Services -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>We use location services to analyze their impact on battery life.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>We monitor location services usage to provide accurate battery analysis.</string>
+
+    <!-- Network Usage -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>We analyze network usage to determine its impact on battery life.</string>
+
+    <!-- Notifications -->
+    <key>NSUserNotificationUsageDescription</key>
+    <string>We'll notify you about important battery status changes and recommendations.</string>
+
+    <!-- Required device capabilities -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>accelerometer</string>
+        <string>gyroscope</string>
+    </array>
+    
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>com.yourdomain.batterytracker.refresh</string>
+    </array>
+
+    <!-- Privacy - Battery Usage Description -->
+    <key>NSBatteryUsageDescription</key>
+    <string>This app monitors battery usage to provide insights and recommendations.</string>
+    
+    <key>NSUserNotificationUsageDescription</key>
+    <string>We'll notify you about important battery status.</string>
+
+
+    <!-- App Transport Security -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+    </dict>
+
+    <!-- Background fetch interval -->
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>com.yourdomain.batterytracker.refresh</string>
+    </array>
+
+    <!-- Appearance -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+
+    <!-- Status Bar -->
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleDarkContent</string>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
 </dict>
 </plist>

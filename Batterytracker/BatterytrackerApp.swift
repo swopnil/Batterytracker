@@ -10,6 +10,10 @@ import SwiftData
 
 @main
 struct BatterytrackerApp: App {
+    init() {
+            BackgroundManager.shared.registerBackgroundTask()
+        }
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,7 +29,9 @@ struct BatterytrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+            }
         }
         .modelContainer(sharedModelContainer)
     }
